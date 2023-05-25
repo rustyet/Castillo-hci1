@@ -1,0 +1,371 @@
+@import url(<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">);
+
+:root{
+    --main-color: #925c19;
+    --dgrey: #5e5e5e;
+    --bg: #5e5e5e;
+    --border: .1rem solid rgba(255,255,255.3);
+}
+
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: #ffffff;
+    border-radius: 5rem;
+}
+
+body{
+    background-color: rgb(155, 155, 155);
+}
+
+section{
+    padding: 2rem 7%;
+}
+
+.heading{
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+    font-size: 4rem;
+}
+
+.heading span{
+    color: var(--main-color);
+    text-transform: uppercase;
+}
+
+.button{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .9rem 3rem;
+    font-size: 1.7rem;
+    color: #fff;
+    background-color: var(--main-color);
+    cursor: pointer;
+}
+
+header{
+    background: #858585;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 7%;
+    border-radius: var(--border);
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100%;
+}
+
+.header .logo img{
+    height: 6rem;
+}
+
+.header .navbar a{
+    margin: 0 1rem;
+    font-size: 1.6rem;
+    color: #000000;
+}
+
+.header .navbar a:hover{
+    color: var(--main-color);
+    border-bottom: .1rem solid var(--main-color);
+    padding-bottom: 5rem;
+}
+
+.header .icons div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    color: #fff;
+    cursor: pointer;
+    font-size: 2.5rem;
+    margin-left: 2rem;
+}
+
+.header .icons div:hover{
+    color: var(--main-color);
+}
+
+#menu-button{
+    display: flex;
+}
+
+.header .search-forms{
+    position: absolute;
+    top: 115%; right: 7%;
+    background: #8f8f8f;
+    width: 50rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    transform: scale(0);
+    transform-origin: top;
+}
+
+.header .search-form.active{
+    transform: scaleY(1);
+}
+
+.header .search-form input{
+    height: 100%;
+    width: 100%;
+    font-size: 1.6rem;
+    color: var(--bg);
+    padding: 1rem;
+    text-transform: none;
+}
+
+.header .search-form label{
+    cursor: pointer;
+    font-size: 2.2rem;
+    margin-right: 1.5rem;
+    color: var(--bg);
+}
+
+.header .search-form label:hover{
+    color: var(--main-color);
+}
+
+.home{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('home.jfif');
+    background-size: cover;
+    background-position: center;
+}
+
+.home .content{
+    max-width: 80rem;
+}
+
+.home .content h3{
+    font-size: 6rem;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.home .content p{
+    font-size: 2rem;
+    font-size: lighter;
+    line-height: 1.8;
+    padding: 1rem 0;
+    color: #000000;
+}
+
+.menu .box-container .box h3{
+    color: #fff;
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+
+.menu .box-container .box p{
+    color: #fff;
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+
+.menu .box-container .box .price{
+    color: #fff;
+    font-size: 2.5rem;
+    padding: 5rem 0;
+}
+
+.menu .box-container .box .price span{
+    font-size: 2.5rem;
+    text-decoration: line-through;
+    font-weight: lighter;
+}
+
+.about .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.about .box-container .box{
+    padding: 5rem;
+    text-align: center;
+    border: var(--border);
+}
+
+.about .box-container .box img{
+    height: 10rem;
+}
+
+.about .box-container .box p{
+    color: #020202;
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+
+.contact h6{
+    font: size 10px;rem;
+    text-transform: uppercase;
+    color: #000000;
+}
+.contact p{
+    font-size: 2rem;
+    font-size: lighter;
+    line-height: 1.8;
+    padding: 1rem 0;
+    color: #000000;
+}
+    form label {
+      display: block;
+      margin-bottom: 10px;
+      }
+      
+      form input[type="text"],
+      form input[type="email"],
+      form textarea {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      margin-bottom: 20px;
+      }
+      
+      form input[type="submit"] {
+      background-color: #d6702c;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 4px;
+      cursor: pointer;
+      }
+      
+      form input[type="submit"]:hover {
+      background-color: #e65c00;
+      }
+
+.footer{
+    background-color: rgb(141, 141, 141);
+    text-align: center;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+.footer .navbar{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    gap: 1rem;
+}
+
+.footer .navbar a{
+    padding: 7rem 2rem;
+    color: #000000;
+    border: var(--border);
+    font-size: 2rem;
+}
+
+.footer .navbara:hover{
+    background-color: var(--main-color);
+}
+
+
+/*media queries*/
+@media(max-width:991px){
+
+    html{
+        font-size: 55%;
+    }
+
+    .header{
+        padding: 1.5rem 2rem;
+    }
+
+    section{
+        padding: 2rem;
+    }
+    
+}
+
+@media(max-width:768px){
+
+    .menu-button{
+        display: inline-block;
+    }
+
+    .header .navbar{
+        position: absolute;
+        top: 100%; right: 0;
+        background: #fff;
+        width: 30rem;
+        height: calc(100vh - 9.5rem);
+    }
+
+    .header .navbar.active{
+        right: 0;
+    }
+
+    .header .navbar a{
+        color: var(--bg);
+        display: block;
+        margin: 1.5rem;
+        padding: .5rem;
+        font-size: 2rem;
+    }
+
+    .header .search-form{
+        width: 90%;
+        right: 2rem;
+    }
+
+    .home{
+        background-position: left;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .home .content h3{
+        font-size: 4.5rem;
+    }
+
+    .home .content p{
+        font-size: 1.5rem;
+    }
+
+}
+
+@media(max-width:450px){
+
+    html{
+        font-size: 50%;
+    }
+
+    .header{
+        padding: 1.5rem 2rem;
+    }
+}
